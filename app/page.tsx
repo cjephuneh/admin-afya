@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import  { useState, useEffect } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { Stethoscope, Users, Calendar, MessageSquare, ArrowUpRight, ArrowDownRight } from "lucide-react"
 import { ProtectedRoute } from "../components/ProtectedRoute"
@@ -225,7 +225,7 @@ function Home() {
                       label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
                     >
                       {appointmentTypeData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} name={entry.name} />
                       ))}
                     </Pie>
                     <Tooltip 

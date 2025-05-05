@@ -10,7 +10,6 @@ import {
   LightbulbIcon, 
   ImageIcon 
 } from "lucide-react"
-import React from "react"
 
 
 interface Report {

@@ -1,4 +1,3 @@
-import React from 'react'
 import { AppointmentDetails } from './appointment-details'
 // import api from "@/utils/api"
 
